@@ -31,9 +31,17 @@ export default function About() {
                   </h1>
                 </div>
                 <p className="px-4 mb-10 text-base leading-7 text-gray-500 ">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam Lorem ipsum dolor sit amet.
+                  Welcome to Urban Estate, your premier destination for all
+                  things real estate. At Urban Estate, we understand that
+                  finding the perfect property is more than just a transaction;
+                  it's about finding your dream home, your ideal investment, or
+                  your next business venture. As the founder of Urban Estate, I
+                  am passionate about connecting individuals and businesses with
+                  the properties that best suit their needs and aspirations.
+                  With years of experience in the real estate industry and a
+                  deep understanding of market trends, I am committed to
+                  providing personalized service and expert guidance every step
+                  of the way.
                 </p>
                 <div className="flex flex-wrap items-center">
                   <div className="w-full px-4 mb-6 sm:w-1/2 md:w-1/2 lg:mb-6">
@@ -173,15 +181,21 @@ export default function About() {
                 </h1>
               </div>
               <p className="mb-6 text-base leading-7 text-gray-500 ">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam Lorem
-                ipsum dolor sit amet. labore et dolore magna aliqua. Ut enim ad
-                minim veniam Lorem ipsum dolor sit amet. amet. labore et dolore
-                magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit
-                amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do Lorem ipsum dolor sit amet.
+                At Urban Estate, we pride ourselves on our integrity,
+                professionalism, and dedication to our clients. Whether you're
+                buying, selling, or leasing, we strive to exceed your
+                expectations and deliver exceptional results. Our comprehensive
+                range of services includes residential sales, commercial
+                leasing, property management, and investment consulting. Beyond
+                our commitment to excellence in real estate, Urban Estate is
+                deeply rooted in our community. We believe in giving back and
+                actively support local charities, initiatives, and organizations
+                that make a positive impact on the lives of others. Thank you
+                for considering Urban Estate for your real estate needs. We look
+                forward to the opportunity to serve you and help you achieve
+                your goals in the dynamic world of real estate. <br /> <br />
+                Sincerely, <br /><br />
+                [Rustam khan] <br /> Founder, Urban Estate
               </p>
               <a
                 href="#"
