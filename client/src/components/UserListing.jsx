@@ -6,6 +6,28 @@ export default function UserListing() {
   const { currentUser } = useSelector((state) => state.user);
   const [showListingsError, setShowListingsError] = useState(false);
   const [userListings, setUserListings] = useState([]);
+
+  const handleListingDelete = async (listingId) => {
+    try {
+      const res = await fetch(`/api/listing/delete/${listingId}`, {
+        method: "DELETE",
+      });
+      const data = await res.json();
+      if (data.success === false) {
+        console.log(data.message);
+        
+        return;
+      }
+
+      setUserListings((prev) =>
+        prev.filter((listing) => listing._id !== listingId)
+      );
+      alert("Listing deleted successfully");
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
+
   useEffect(() => {
     const handleShowListings = async () => {
       try {
@@ -38,7 +60,6 @@ export default function UserListing() {
 
         {userListings && userListings.length > 0 && (
           <div className="flex flex-col gap-4">
-        
             {userListings.map((listing) => (
               <div
                 key={listing._id}
