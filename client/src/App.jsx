@@ -10,6 +10,7 @@ import CreateListing from './pages/CreateListing';
 import UpdateListing from './pages/UpdateListing';
 import Listing from './pages/Listing';
 import Search from './pages/Search';
+import Userlisting from './components/UserListing';
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
         <Route element={<PrivateRoute />}>
           <Route path='/profile' element={<Profile />} />
           <Route path='/create-listing' element={<CreateListing />} />
+          <Route path='/user-listing' element={<Userlisting />} />
           <Route
             path='/update-listing/:listingId'
             element={<UpdateListing />}
