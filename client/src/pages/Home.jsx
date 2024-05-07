@@ -57,7 +57,7 @@ export default function Home() {
           place with ease
         </h1>
         <div className='text-gray-400 text-xs sm:text-sm'>
-          Sahand Estate is the best place to find your next perfect place to
+          Urban Estate is the best place to find your next perfect place to
           live.
           <br />
           We have a wide range of properties for you to choose from.
@@ -71,22 +71,24 @@ export default function Home() {
       </div>
 
       {/* swiper */}
-      <Swiper navigation>
-        {offerListings &&
-          offerListings.length > 0 &&
-          offerListings.map((listing) => (
-            <SwiperSlide>
-              <div
-                style={{
-                  background: `url(${listing.imageUrls[0]}) center no-repeat`,
-                  backgroundSize: 'cover',
-                }}
-                className='h-[500px]'
-                key={listing._id}
-              ></div>
-            </SwiperSlide>
-          ))}
-      </Swiper>
+  <div className="max-w-6xl mx-auto rounded-md overflow-hidden">
+        <Swiper navigation>
+          {offerListings &&
+            offerListings.length > 0 &&
+            offerListings.map((listing) => (
+              <SwiperSlide>
+                <div
+                  style={{
+                    background: `url(${listing.imageUrls[0]}) center no-repeat`,
+                    backgroundSize: "cover",
+                  }}
+                  className="h-[500px]"
+                  key={listing._id}
+                ></div>
+              </SwiperSlide>
+            ))}
+        </Swiper>
+      </div>
 
       {/* listing results for offer, sale and rent */}
 
