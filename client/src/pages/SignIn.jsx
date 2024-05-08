@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import toast from 'react-hot-toast';
 import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import {
@@ -34,12 +35,15 @@ export default function SignIn() {
       console.log(data);
       if (data.success === false) {
         dispatch(signInFailure(data.message));
+         toast.error('Sign in failed!!');
         return;
       }
       dispatch(signInSuccess(data));
       navigate('/');
+      toast.success('Sign in successfully!!');
     } catch (error) {
       dispatch(signInFailure(error.message));
+       toast.error('Sign in failed!!');
     }
   };
   return (
